@@ -1,0 +1,937 @@
+[INFO] [2017-05-22 11:35:08][us.codecraft.webmagic.Spider]Spider / started!
+  [INFO] [2017-05-22 11:35:08][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page //https://www.zhihu.com/question/30116337
+  [WARN] [2017-05-22 11:35:08][us.codecraft.webmagic.downloader.HttpClientDownloader]download page //https://www.zhihu.com/question/30116337 error
+  org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:70)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:124)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	... 9 more
+[INFO] [2017-05-22 11:39:14][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 11:39:14][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/30116337
+  [WARN] [2017-05-22 11:39:14][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/30116337 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 11:40:57][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 11:40:57][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152
+  [WARN] [2017-05-22 11:40:57][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 11:47:49][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 11:47:49][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 11:47:50][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 13:55:47][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 13:55:47][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 13:55:47][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 13:56:14][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 13:56:14][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 13:56:14][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:00:42][us.codecraft.webmagic.Spider]Spider zhihu.com started!
+  [INFO] [2017-05-22 14:00:42][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:00:42][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:05:24][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:05:24][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:05:24][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:09:08][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:09:08][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:09:08][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:09:21][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:09:21][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:09:21][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:10:06][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:10:06][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:10:07][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:10:35][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:10:35][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:10:36][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:10:53][us.codecraft.webmagic.Spider]Spider .zhihu.com started!
+  [INFO] [2017-05-22 14:10:53][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:10:53][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:17:33][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 14:17:33][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:17:34][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:32:41][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 14:32:41][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:32:42][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 14:33:48][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 14:33:48][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 14:33:48][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 15:00:53][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 15:00:53][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 15:00:53][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-22 15:13:49][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-22 15:13:49][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-22 15:13:50][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-05-23 08:53:48][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-05-23 08:53:48][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-05-23 08:53:49][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 10:51:39][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 10:51:39][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 10:51:46][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:03:04][us.codecraft.webmagic.Spider]Spider / started!
+  [INFO] [2017-07-13 14:03:04][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page //https://www.zhihu.com/question/30116337
+  [WARN] [2017-07-13 14:03:04][us.codecraft.webmagic.downloader.HttpClientDownloader]download page //https://www.zhihu.com/question/30116337 error
+  org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: org.apache.http.ProtocolException: Target host is not specified
+	at org.apache.http.impl.conn.DefaultRoutePlanner.determineRoute(DefaultRoutePlanner.java:70)
+	at org.apache.http.impl.client.InternalHttpClient.determineRoute(InternalHttpClient.java:124)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	... 9 more
+[INFO] [2017-07-13 14:04:43][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:04:43][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:04:43][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:05:46][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:05:46][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:05:47][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:06:38][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:06:38][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:06:39][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:27:58][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:27:58][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:27:58][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:37:57][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:37:57][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:37:57][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:40:23][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:40:23][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:40:23][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:43:42][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:43:42][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:43:42][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:44:35][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:44:35][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [WARN] [2017-07-13 14:44:36][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/47790152/answer/107858870 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:47:46][us.codecraft.webmagic.Spider]Spider  www.zhihu.com started!
+  [INFO] [2017-07-13 14:47:46][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page  https://www.zhihu.com/question/27761934/answer/164790050
+  [ERROR] [2017-07-13 14:47:46][us.codecraft.webmagic.Spider]process request Request{url=' https://www.zhihu.com/question/27761934/answer/164790050', method='null', extras={statusCode=0}, priority=0} error
+  java.lang.IllegalArgumentException
+	at java.net.URI.create(URI.java:842)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.getHttpUriRequest(HttpClientDownloader.java:147)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:101)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.URISyntaxException: Illegal character in scheme name at index 0:  https://www.zhihu.com/question/27761934/answer/164790050
+	at java.net.URI$Parser.fail(URI.java:2809)
+	at java.net.URI$Parser.checkChars(URI.java:2982)
+	at java.net.URI$Parser.checkChar(URI.java:2992)
+	at java.net.URI$Parser.parse(URI.java:3008)
+	at java.net.URI.<init>(URI.java:578)
+	at java.net.URI.create(URI.java:840)
+	... 9 more
+[INFO] [2017-07-13 14:48:03][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:48:03][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/27761934/answer/164790050
+  [WARN] [2017-07-13 14:48:03][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/27761934/answer/164790050 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:49:02][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:49:02][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/27761934/answer/164790050
+  [INFO] [2017-07-13 14:50:01][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:50:01][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/27761934/answer/164790050
+  [INFO] [2017-07-13 14:50:27][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:50:27][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/27761934/answer/164790050
+  [WARN] [2017-07-13 14:50:27][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/27761934/answer/164790050 error
+  javax.net.ssl.SSLPeerUnverifiedException: Host name 'www.zhihu.com' does not match the certificate subject provided by the peer (CN=www.notexist.com)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:465)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:395)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+[INFO] [2017-07-13 14:55:11][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:55:11][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [INFO] [2017-07-13 14:55:47][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:55:47][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/47790152/answer/107858870
+  [INFO] [2017-07-13 14:57:40][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:57:40][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583
+  [INFO] [2017-07-13 14:58:37][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:58:37][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583
+  [INFO] [2017-07-13 14:59:48][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:59:48][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 14:59:55][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 14:59:55][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:23:45][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:23:45][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:25:35][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:25:35][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [WARN] [2017-07-13 15:25:44][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/37810583/answer/128934903 error
+  org.apache.http.conn.ConnectTimeoutException: Connect to www.zhihu.com:443 [www.zhihu.com/118.178.213.186] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:442)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:480)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:934)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1332)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1359)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1343)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+[INFO] [2017-07-13 15:25:45][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:25:45][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:26:01][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:26:01][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:26:19][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:26:19][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:26:46][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:26:46][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:27:05][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:27:05][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:29:24][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:29:24][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [WARN] [2017-07-13 15:29:29][us.codecraft.webmagic.downloader.HttpClientDownloader]download page https://www.zhihu.com/question/37810583/answer/128934903 error
+  org.apache.http.conn.ConnectTimeoutException: Connect to www.zhihu.com:443 [www.zhihu.com/118.178.213.186] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:337)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 more
+[INFO] [2017-07-13 15:29:53][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:29:53][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:30:25][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:30:25][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:31:00][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:31:00][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:31:16][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:31:16][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:31:34][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:31:34][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:31:54][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:31:54][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:32:06][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:32:06][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:33:20][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:33:20][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:33:59][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:33:59][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:34:40][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:34:40][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/37810583/answer/128934903
+  [INFO] [2017-07-13 15:44:35][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:44:35][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:44:36][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=71c2e386b05e4187bad8b7a958bffe72|1499931907000|1499931907000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:45:07 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:45:07 GMT
+  [WARN] [2017-07-13 15:44:36][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="ODljZGEwOTA1YzBlNGJhYmIzZDU3MzcwYTg1OTk2ZmU=|1499931907|5094866e1af37196ccbd42d2e15de36da4bac442"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:07 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:07 GMT
+  [WARN] [2017-07-13 15:44:36][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="Yjc5MmEwNjA2MjQxNDVhNGFmZGJiYWJkYTVmNThlZGM=|1499931907|02347f0a09e1d3ad3961f50497cf9da1e9d06e32"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:07 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:07 GMT
+  [WARN] [2017-07-13 15:44:36][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="NTY0YWY1YWVmNWIwNGJmYzhlNDM2NjIwODUzY2FkODI=|1499931907|32b85cf430aefa10250ae5fc4dd56c664b04d4e8"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:07 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:07 GMT
+  [INFO] [2017-07-13 15:45:27][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:45:27][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:45:28][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=efe175a0018b4c4694df33380c35750d|1499931959000|1499931959000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:45:59 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:45:59 GMT
+  [WARN] [2017-07-13 15:45:28][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="MmQ2MDMxZjJhYTI3NDc2NWI5ZWJlNzk3YjNiYjU5YjY=|1499931959|10bdf4dd52d6724008c8a85205bbf40b0487886a"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:59 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:59 GMT
+  [WARN] [2017-07-13 15:45:28][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="NjI4ZWQ4Y2Q1NmUxNDc1ZGEwYzU3MDViYmNhZDk2ZmY=|1499931959|278da255378c76a66cbeda07cf7363d0bcc488f2"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:59 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:59 GMT
+  [WARN] [2017-07-13 15:45:28][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="YTZmNTZkMzA5MzU3NDc2YmE1YzU1YzM4MWZjMGU1MjY=|1499931959|b95af054e0f9e4e22076a1ecb89eead7b8d77158"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:45:59 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:45:59 GMT
+  [INFO] [2017-07-13 15:46:14][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:46:14][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:46:15][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=e55e6e0323d64f57887e9c9a8f4158c2|1499932007000|1499932007000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:46:47 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:46:47 GMT
+  [WARN] [2017-07-13 15:46:15][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="ODY5MDA4MGY4YWRmNDU4NDgxODhkMDUzMDM3MTQ0ZmY=|1499932007|665c363ee55bd81d0260a896d7f5770573fbcf07"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:46:47 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:46:47 GMT
+  [WARN] [2017-07-13 15:46:15][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="YzEyMGMxYzllM2U5NDU5ZGFjMGVkZjFmZWFhNzk4NjU=|1499932007|a30ce449e4a754b941911af3835aadb0d2a2d6db"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:46:47 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:46:47 GMT
+  [WARN] [2017-07-13 15:46:15][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="YjhjYTc4MDU0YjBlNDAxZGEzMmRjNGU5YWI3M2E0ZWM=|1499932007|0da4dbc9482cbce34011d3da195f1b65b7023c59"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:46:47 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:46:47 GMT
+  [INFO] [2017-07-13 15:46:38][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:46:38][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:46:39][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=fd6182ef571a4f9b926ed984ba5e51bc|1499932030000|1499932030000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:47:10 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:47:10 GMT
+  [WARN] [2017-07-13 15:46:39][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="OTExYjIxZDVlMDQ5NDkyYmEyY2VlOWRlODNiY2IxYTM=|1499932030|1e2b6541d21e97a6e9d77bec8932182638cce0df"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:10 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:10 GMT
+  [WARN] [2017-07-13 15:46:39][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="OWNmYTQ0OWZlMDRlNDVlZWE2YzQ0ODI5M2M1NDZlN2E=|1499932030|4e8cd72d411d32342dfbb924d20c61660b14a9a5"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:10 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:10 GMT
+  [WARN] [2017-07-13 15:46:39][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="ZWQ1N2ZkYjlhZmQwNDY0NWJmMGYyN2RkOGM5ZmZhZjc=|1499932030|9ca7e806e73edd04038336391be7cb488c64fb71"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:10 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:10 GMT
+  [INFO] [2017-07-13 15:47:04][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:47:04][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:47:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=41f13398de1649f7a1c9a967a85619ab|1499932056000|1499932056000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:47:36 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:47:36 GMT
+  [WARN] [2017-07-13 15:47:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="NzAwMDBiN2U2YzJhNDFiY2E1ZWU3ODc3NTgyNWFhMDE=|1499932056|3c4ade144f00a0258bcf2903c8db74877670e3c3"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:36 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:36 GMT
+  [WARN] [2017-07-13 15:47:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="YjgxMjMyZWQ5OWNlNDRiZjkwZGJiNmExYzgxNjkyMWY=|1499932056|9f7dca1ae806f42b27e4d28c296b1cc4171e3ee7"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:36 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:36 GMT
+  [WARN] [2017-07-13 15:47:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="OWYzNDU2OWQ2ZDdmNGYwNGI1ZTE3ZDRmMzU5NTk2OTI=|1499932056|b287dd24e310a0cd7270828b60f1fb624e33c89c"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:47:36 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:47:36 GMT
+  [INFO] [2017-07-13 15:48:10][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:48:10][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [INFO] [2017-07-13 15:50:04][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:50:04][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:50:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=15913888b5da4894ace1ac92d3b51f38|1499932237000|1499932237000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:50:37 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:50:37 GMT
+  [WARN] [2017-07-13 15:50:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="OWIxNjcxOGE2ODRlNGJhMjhiNmM5N2M2NTVkNjk0YTY=|1499932237|82110b665792edb21b610858c1b701708e5976ce"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:50:37 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:50:37 GMT
+  [WARN] [2017-07-13 15:50:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="ZWI2OGJjYjJmZmIxNGI0YWE4ZTlkOWVkZTg2NmZkYjA=|1499932237|4a51b087ee09e6e9ea07e69bf6c89a70cd893e3c"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:50:37 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:50:37 GMT
+  [WARN] [2017-07-13 15:50:05][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="MzNkZTc3YzI4MmNiNGQ5NTk5ZDM4NmQ2MzlmOTRiNDc=|1499932237|766f2fd165abfc2f4149c86f8e22e7a4284a24ac"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:50:37 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:50:37 GMT
+  [INFO] [2017-07-13 15:50:17][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:50:17][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [INFO] [2017-07-13 15:51:52][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:51:52][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:51:52][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=51cd16f081c74e0a93de59220f3e338b|1499932344000|1499932344000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:52:24 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:52:24 GMT
+  [WARN] [2017-07-13 15:51:52][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="MjhmNDZhYmJlNmUyNGI0NGFmZWFlODlmZWUxZWVhNDk=|1499932344|359bbc908758e9ea3db891e3dfecd58a77c5ccd3"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:52:24 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:52:24 GMT
+  [WARN] [2017-07-13 15:51:52][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="MzQwYjg2NmJlNDg1NGI5NzgyZTIzZWQzZWNiOWFmMWU=|1499932344|70aac2050bbdb9fef66c76dac5ca4e4b7c198651"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:52:24 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:52:24 GMT
+  [WARN] [2017-07-13 15:51:52][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="MjFkMTQ3MTNhMGJlNDQyNDlkNTY5M2Y2YWMwMDUxYmE=|1499932344|bd4af4e42faf02f8be7d456d20a832d3fef830f7"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:52:24 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:52:24 GMT
+  [INFO] [2017-07-13 15:52:31][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:52:31][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:52:32][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=7ebae012821f44a7b8e21f4f2c922d09|1499932383000|1499932383000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:53:03 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:53:03 GMT
+  [WARN] [2017-07-13 15:52:32][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="MzQxOWUxYzdmNmJkNDlmZGEzYjA2ZjdhZjUyNGJmYzk=|1499932383|cd1dd005feeeee5ba47fc77f7da483311f2b49ed"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:53:03 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:53:03 GMT
+  [WARN] [2017-07-13 15:52:32][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="MDliYThkZTBiMTZlNGUyY2E3ZmJjMzRhZGQzODYzZjg=|1499932383|1cd8c77e74ebb74dcb6036816efc956630dbf7ca"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:53:03 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:53:03 GMT
+  [WARN] [2017-07-13 15:52:32][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="YTBjM2M1M2U3MDE3NDZjMTk4OGU5NDc3MGNmNDViMGY=|1499932383|637c8b432150dbdb21d885ded8927312056a8f71"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:53:03 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:53:03 GMT
+  [INFO] [2017-07-13 15:53:44][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:53:44][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [INFO] [2017-07-13 15:54:07][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:54:07][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [WARN] [2017-07-13 15:54:08][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: q_c1=bc077d20fb0b43b8bc922c54ee11fc97|1499932480000|1499932480000; Domain=zhihu.com; expires=Sun, 12 Jul 2020 07:54:40 GMT; Path=/". Invalid 'expires' attribute: Sun, 12 Jul 2020 07:54:40 GMT
+  [WARN] [2017-07-13 15:54:08][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: r_cap_id="YjMwNTVmYmQzMjVhNDE0NjlkZjFkZjNkY2Q4OWQxYTc=|1499932480|9b8ee507f680ae72a3cbf8f6fec914b6c5cdccea"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:54:40 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:54:40 GMT
+  [WARN] [2017-07-13 15:54:08][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: cap_id="MTJmN2IzYTg3NDVkNGI4NWEyYTJlODExNTQ2MGQxMDM=|1499932480|fa295b37300cbd0f76bb2d36bb7d4fd5ba7257db"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:54:40 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:54:40 GMT
+  [WARN] [2017-07-13 15:54:08][org.apache.http.client.protocol.ResponseProcessCookies]Invalid cookie header: "Set-Cookie: l_cap_id="Y2I1M2ZkZGQwZDIxNDdkMzkyNmQyNWQ0Yjg4NDk0ZTk=|1499932480|3c54f3bc0bd24b1f7e4a72fcfeb6ddd62a9eee1c"; Domain=zhihu.com; expires=Sat, 12 Aug 2017 07:54:40 GMT; Path=/". Invalid 'expires' attribute: Sat, 12 Aug 2017 07:54:40 GMT
+  [INFO] [2017-07-13 15:54:19][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 15:54:19][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  [INFO] [2017-07-13 16:00:11][us.codecraft.webmagic.Spider]Spider www.zhihu.com started!
+  [INFO] [2017-07-13 16:00:11][us.codecraft.webmagic.downloader.HttpClientDownloader]downloading page https://www.zhihu.com/question/36055254/answer/101613748
+  
